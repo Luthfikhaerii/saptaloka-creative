@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+         <Navbar/>
         {children}
+        <footer className="w-full py-6 text-center fixed bottom-0 left-0 
+      bg-black/20 backdrop-blur-md text-white z-30">
+      <p className="text-sm">© {new Date().getFullYear()} Saptaloka Creative. All rights reserved.</p>
+    </footer>
       </body>
     </html>
   );
