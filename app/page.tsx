@@ -1,6 +1,8 @@
 import Image from "next/image";
 import ThreeDCard from "@/components/ThreeDCard";
 import { PlayCircleIcon, PuzzlePieceIcon, Cog6ToothIcon, PencilSquareIcon, ArrowRightIcon, ArrowLeftIcon } from '@heroicons/react/24/outline'; // Contoh ikon dari Heroicons
+import BrandCarousel from "@/components/BrandCarousel";
+import PortfolioSection from "@/components/Portofolio";
 
 export default function Home() {
   return (
@@ -26,7 +28,7 @@ export default function Home() {
       <section className="min-h-screen bg-black text-white flex flex-col items-center pt-28 pb-28 w-full">
         <div className="flex flex-col items-center">
           <h1 className="text-4xl md:text-4xl max-w-xl font-extrabold text-center mb-4">
-            Creative Agency That Builds Memorable Brands
+            <p className="text-blue-400">Creative Agency That</p>  Builds Memorable Brands
           </h1>
           <p className="text-xs md:text-base text-white/70 text-center mb-10 max-w-3xl">
             We help enterprises accelerate digital transformation with tech consultancy,
@@ -38,7 +40,7 @@ export default function Home() {
         <div className="flex w-[90%] gap-10 flex-wrap justify-evenly">
           {/* CARD 1 */}
           <div
-            className="w-[430px] h-[430px] bg-black/5 rounded-xl cursor-pointer 
+            className="w-[350px] h-[350px] bg-black/5 rounded-xl cursor-pointer 
       transition-all duration-300 ease-out perspective-[1200px]"
           >
             <div
@@ -50,7 +52,7 @@ export default function Home() {
           </div>
           {/* CARD 2 */}
           <div
-            className="w-[430px] h-[430px] bg-black/5 rounded-xl cursor-pointer 
+            className="w-[350px] h-[350px] bg-black/5 rounded-xl cursor-pointer 
       transition-all duration-300 ease-out"
           >
             <div
@@ -62,7 +64,7 @@ export default function Home() {
           </div>
           {/* CARD 3 */}
           <div
-            className="w-[430px] h-[430px] bg-black/5 rounded-xl cursor-pointer 
+            className="w-[350px] h-[350px] bg-black/5 rounded-xl cursor-pointer 
       transition-all duration-300 ease-out perspective-[1200px]"
           >
             <div
@@ -75,7 +77,8 @@ export default function Home() {
 
         </div>
       </section>
-      <section className="bg-white min-h-screen py-20 px-4 sm:px-8 lg:px-16 w-full">
+
+      <section className="bg-white min-h-screen pt-10 px-4 sm:px-8 lg:px-16 w-full mb-6">
         <div className="max-w-7xl mx-auto relative w-full">
 
           {/* Kontainer Utama untuk Grid/Tata Letak */}
@@ -143,11 +146,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-white min-h-screen py-16 px-4 sm:px-8 lg:px-16 flex items-center justify-center">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <section className="bg-white flex items-center justify-center">
+        <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
 
           {/* Kolom Kiri: Video Showcase (menggantikan gambar ponsel) */}
-          <div className="relative w-full h-80 sm:h-96 md:h-[30rem] lg:h-[35rem] bg-blue-100 flex items-center justify-center overflow-hidden shadow-2xl rounded-lg">
+          <div className="relative w-full h-80 sm:h-96 md:h-[30rem] lg:h-[35rem] bg-blue-100 flex items-center justify-center overflow-hidden shadow-2xl">
             {/* Elemen video untuk menampilkan konten */}
             {/* Ganti 'your-video-path.mp4' dengan path ke file video Anda di public/ */}
             <video
@@ -165,14 +169,14 @@ export default function Home() {
           </div>
 
           {/* Kolom Kanan: Teks dan Daftar Layanan */}
-          <div className="flex flex-col">
+          <div className="flex flex-col px-20">
             <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-2">
-              FUTURE-PROOF AGILE 360&deg;
+              OUR SERVICES&deg;
             </p>
             <div className="w-24 h-1 bg-blue-500 mb-6"></div> {/* Garis pemisah */}
 
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black mb-6 leading-tight">
-              Digital<br />Transformations
+              Digital Creative<br />Marketing
             </h2>
 
             <p className="text-gray-700 text-lg mb-10 max-w-lg">
@@ -213,6 +217,20 @@ export default function Home() {
           </div>
 
         </div>
+      </section>
+
+
+      <PortfolioSection />
+
+
+
+
+      <section className="py-20">
+        <h2 className="text-center text-5xl font-extrabold mb-6">Clients</h2>
+        <p className="text-sm  text-center md:text-base text-gray-700 mb-6">
+                Introduce yourself with content that sparks conversation and disrupts the traditional marketing model. Be memorable. Feel authentic. Make an impact.
+              </p>
+        <BrandCarousel />
       </section>
 
       <section className="bg-white z-20">
