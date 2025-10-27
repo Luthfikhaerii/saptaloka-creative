@@ -3,10 +3,16 @@ export default function contact(){
     <>
      <main
       className="w-full min-h-screen text-white bg-black bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/cards/card2.png')" }}
     >
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src="/videos/creative-bg.mp4"
+        autoPlay
+        loop
+        muted
+      />
       {/* Overlay */}
-      <div className="bg-black/50 w-full min-h-screen">
+      <div className="bg-black/50 w-full min-h-screen z-20 relative">
         
         {/* Section 1: Form & Contact Info */}
         <section className="w-full flex flex-col lg:flex-row justify-between gap-12 px-10 lg:px-24 py-28">
@@ -31,7 +37,6 @@ export default function contact(){
               </button>
             </form>
           </div>
-
           {/* Right: Contact Info */}
           <div className="w-full lg:w-1/2 lg:text-right space-y-4">
             <h3 className="text-xl font-semibold opacity-80">Global Headquarters</h3>
@@ -54,34 +59,6 @@ export default function contact(){
                 <li>Website: saptaloka.id</li>
               </ul>
             </div>
-          </div>
-        </section>
-
-        {/* Section 2: Map & Office Info */}
-        <section className="flex flex-col lg:flex-row justify-between gap-10 px-10 lg:px-24 pb-28">
-          
-          {/* Map */}
-          <div className="w-full lg:w-3/5 relative">
-            <img
-              src="/assets/map-indonesia-white.svg"
-              alt="Map Indonesia"
-              className="w-full opacity-90"
-            />
-
-            {/* Map Marker Dummy */}
-            <div className="absolute top-1/2 left-1/2 bg-orange-500 w-4 h-4 rounded-full shadow-lg transform -translate-x-1/2 -translate-y-1/2"></div>
-          </div>
-
-          {/* Office Locations */}
-          <div className="w-full lg:w-2/5 flex flex-col justify-center space-y-3">
-            <h3 className="text-xl font-semibold">Office Locations</h3>
-
-            <ul className="bg-black/40 p-4 rounded-xl w-fit space-y-2">
-              <li className="bg-white text-black px-4 py-1 rounded">Jakarta, Indonesia</li>
-              <li className="bg-white text-black px-4 py-1 rounded">Surabaya, Indonesia</li>
-              <li className="bg-white text-black px-4 py-1 rounded">Bandung, Indonesia</li>
-              <li className="bg-white text-black px-4 py-1 rounded">Bali, Indonesia</li>
-            </ul>
           </div>
         </section>
       </div>

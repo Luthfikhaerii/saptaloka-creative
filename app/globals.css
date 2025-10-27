@@ -11,3 +11,18 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
+.outline-text-black {
+  -webkit-text-stroke: 2px black;
+  color: white; /* isi warna */
+}
+
+.outline-text-blue {
+  -webkit-text-stroke: 2px rgb(0, 98, 255);
+  color: white; /* isi warna */
+}
+
+.outline-text-yellow {
+  -webkit-text-stroke: 2px rgb(194, 212, 0);
+  color: white; /* isi warna */
+}
