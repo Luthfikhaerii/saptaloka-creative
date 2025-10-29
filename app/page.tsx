@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
       </section>
-      <section className="min-h-screen bg-black text-white flex flex-col items-center pt-28 pb-28 w-full">
+      <section className="min-h-screen bg-black text-white flex flex-col items-center pt-20 pb-28 w-full">
         <div className="flex flex-col items-center">
           <h1 className="text-5xl max-w-2xl font-extrabold text-center mb-4">
             <p className="text-blue-400">Creative Agency That</p>  Builds Memorable Brands
@@ -78,7 +78,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white min-h-screen pt-10 px-4 sm:px-8 lg:px-16 w-full mb-6">
+      <section className="bg-white min-h-screen pt-20 px-4 sm:px-8 lg:px-16 w-full mb-6">
         <div className="max-w-7xl mx-auto relative w-full">
 
           {/* Kontainer Utama untuk Grid/Tata Letak */}
@@ -151,7 +151,7 @@ export default function Home() {
         <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
 
           {/* Kolom Kiri: Video Showcase (menggantikan gambar ponsel) */}
-          <div className="relative w-full h-80 sm:h-96 md:h-[30rem] lg:h-[35rem] bg-blue-100 flex items-center justify-center overflow-hidden shadow-2xl">
+          <div className="relative w-full md:h-[45rem] bg-blue-100 flex items-center justify-center overflow-hidden shadow-2xl">
             {/* Elemen video untuk menampilkan konten */}
             {/* Ganti 'your-video-path.mp4' dengan path ke file video Anda di public/ */}
             <video
@@ -169,7 +169,7 @@ export default function Home() {
           </div>
 
           {/* Kolom Kanan: Teks dan Daftar Layanan */}
-          <div className="flex flex-col px-20">
+          <div className="flex flex-col px-20 pt-10 pb-14">
             <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-2">
               OUR SERVICES&deg;
             </p>
@@ -189,29 +189,25 @@ export default function Home() {
               {/* Item Layanan 1: Agile Development */}
               <div className="flex items-center space-x-4">
                 <PlayCircleIcon className="h-10 w-10 text-blue-600" /> {/* Ikon */}
-                <p className="text-xl font-medium text-gray-800">Agile Development</p>
-                <span className="ml-auto text-blue-600 font-bold">&gt;</span>
+                <p className="text-xl font-medium text-gray-800">Social Media Management</p>
               </div>
 
               {/* Item Layanan 2: Project Based */}
               <div className="flex items-center space-x-4">
                 <PuzzlePieceIcon className="h-10 w-10 text-blue-600" /> {/* Ikon */}
-                <p className="text-xl font-medium text-gray-800">Project Based</p>
-                <span className="ml-auto text-blue-600 font-bold">&gt;</span>
+                <p className="text-xl font-medium text-gray-800">Content Video</p>
               </div>
 
               {/* Item Layanan 3: Managed Services */}
               <div className="flex items-center space-x-4">
                 <Cog6ToothIcon className="h-10 w-10 text-blue-600" /> {/* Ikon */}
-                <p className="text-xl font-medium text-gray-800">Managed Services</p>
-                <span className="ml-auto text-blue-600 font-bold">&gt;</span>
+                <p className="text-xl font-medium text-gray-800">Photo Product</p>
               </div>
 
               {/* Item Layanan 4: Design Services */}
               <div className="flex items-center space-x-4">
                 <PencilSquareIcon className="h-10 w-10 text-blue-600" /> {/* Ikon */}
-                <p className="text-xl font-medium text-gray-800">Design Services</p>
-                <span className="ml-auto text-blue-600 font-bold">&gt;</span>
+                <p className="text-xl font-medium text-gray-800">Analisyst</p>
               </div>
             </div>
           </div>
@@ -225,8 +221,8 @@ export default function Home() {
 
 
 
-      <section className="py-20">
-        <h2 className="text-center text-5xl font-extrabold mb-6">Clients</h2>
+      <section className="py-36">
+        <h2 className="text-center text-6xl font-extrabold mb-6">Clients</h2>
         <p className="text-sm  text-center md:text-base text-gray-700 mb-6">
                 Introduce yourself with content that sparks conversation and disrupts the traditional marketing model. Be memorable. Feel authentic. Make an impact.
               </p>

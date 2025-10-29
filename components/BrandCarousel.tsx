@@ -4,12 +4,12 @@ import { Autoplay } from "swiper/modules";
 
 
 const brands = [
-  "/cards/card1.png",
-  "/cards/card2.png",
-  "/cards/card3.png",
-  "/cards/card1.png",
-  "/cards/card2.png",
-  "/cards/card3.png",
+  "/clients/client1.png",
+  "/clients/client2.jpg",
+  "/clients/client1.png",
+  "/clients/client2.jpg",
+  "/clients/client1.png",
+  "/clients/client2.jpg",
 ];
 
 export default function BrandCarousel() {
@@ -31,7 +31,7 @@ export default function BrandCarousel() {
             <img
               src={logo}
               alt="brand logo"
-              className="h-40 w-40 w-auto mx-auto opacity-70 hover:opacity-100 transition"
+              className="h-24 w-24 w-auto mx-auto opacity-70 hover:opacity-100 transition"
             />
           </SwiperSlide>
         ))}

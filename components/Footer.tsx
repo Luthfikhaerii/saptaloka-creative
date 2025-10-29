@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, MessageCircle, MessageCircleDashed, Phone } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -8,15 +8,15 @@ export default function Footer() {
                     <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
                         {/* Ganti dengan komponen Image atau SVG Logo Anda */}
                         <div className="w-32 h-12 relative mb-2">
-                            <p className="text-3xl font-bold tracking-wider">RA</p>
+                            <p className="text-3xl font-bold tracking-wider">SAPTALOKA</p>
+                            <p className="text-xs font-light tracking-widest opacity-70">Grow your brand</p>
                         </div>
-                        <p className="text-xl font-bold tracking-widest leading-none">REVEMOIN</p>
-                        <p className="text-xs font-light tracking-widest opacity-70">BRAND CATALYST</p>
+                        
                     </div>
 
                     {/* 2. Navigasi */}
                     <nav className="flex flex-wrap justify-center md:justify-start space-x-6 sm:space-x-10 mb-8 md:mb-0 text-lg font-medium">
-                        {['Home', 'About Us', 'Services', 'Why Us', 'Contact', 'News'].map((item) => (
+                        {['Home', 'Portfolio', 'Contact', 'Documentation'].map((item) => (
                             <a
                                 key={item}
                                 href={`/${item.toLowerCase().replace(' ', '-')}`}
@@ -37,7 +37,7 @@ export default function Footer() {
                             className="w-10 h-10 flex items-center justify-center bg-gray-800 border border-gray-700 hover:bg-gray-700 transition duration-200"
                             aria-label="WhatsApp"
                         >
-                            {/* <Whatsapp className="w-5 h-5 text-white" /> */}
+                            <MessageCircle className="w-5 h-5 text-white"/>
                         </a>
                         <a
                             href="mailto:example@example.com"
@@ -53,7 +53,7 @@ export default function Footer() {
                             className="w-10 h-10 flex items-center justify-center bg-gray-800 border border-gray-700 hover:bg-gray-700 transition duration-200"
                             aria-label="Instagram"
                         >
-                            {/* <Instagram className="w-5 h-5 text-white" /> */}
+                            <Phone className="w-5 h-5 text-white" />
                         </a>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ export default function Footer() {
 
                     {/* Copyright */}
                     <p>
-                        Copyright Revemoin© 2025. All rights reserved
+                        Copyright Saptloka© 2025. All rights reserved
                     </p>
                 </div>
             </div>
