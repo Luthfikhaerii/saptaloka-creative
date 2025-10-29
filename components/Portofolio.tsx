@@ -29,23 +29,24 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-black ">
-      <div className="max-w-6xl mx-auto relative">
+    <section className="pt-28 pb-36 px-4 bg-black  relative">
+      <div className="max-w-7xl mx-auto relative">
         {/* Section Header */}
         <div className="text-start mb-12">
           <h1 className="text-6xl font-extrabold text-white mb-4">Portfolio</h1>
-          <span className="text-lg bg-blue-400 text-white font-semibold p-2">
+          <span className="text-lg bg-yellow-400 text-black font-semibold p-2">
             Browse to see our most recent and noteworthy projects.
           </span>
         </div>
 
         {/* Portfolio Items */}
         <div className="grid grid-cols-2 gap-10">
-          <div className="w-[500px] h-[500px] bg-white">
-
+          <div className="w-[600px] h-[400px]">
+            <img src={"/portfolio.png"} />
           </div>
-           <div className="w-[500px] h-[500px] bg-red-200 absolute top-0 right-0">
-
+          <div className="w-[600px] h-[300px] absolute top-0 right-0 text-center">
+            <img src={"/portfolio2.jpg"} />
+            
           </div>
         </div>
       </div>

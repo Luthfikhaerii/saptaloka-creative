@@ -27,10 +27,10 @@ export default function Home() {
       </section>
       <section className="min-h-screen bg-black text-white flex flex-col items-center pt-28 pb-28 w-full">
         <div className="flex flex-col items-center">
-          <h1 className="text-4xl md:text-4xl max-w-xl font-extrabold text-center mb-4">
+          <h1 className="text-5xl max-w-2xl font-extrabold text-center mb-4">
             <p className="text-blue-400">Creative Agency That</p>  Builds Memorable Brands
           </h1>
-          <p className="text-xs md:text-base text-white/70 text-center mb-10 max-w-3xl">
+          <p className="text-xs md:text-base text-white/70 text-center mb-10 max-w-5xl">
             We help enterprises accelerate digital transformation with tech consultancy,
             custom software development, and team augmentation.
           </p>
@@ -47,7 +47,7 @@ export default function Home() {
               className="w-full h-full rounded-xl shadow-2xl 
         transition-all duration-200 ease-out
         bg-cover bg-center rotate-y-[25deg]"
-              style={{ backgroundImage: `url(/cards/card1.png)` }}
+              style={{ backgroundImage: `url(/section/1.png)` }}
             />
           </div>
           {/* CARD 2 */}
@@ -59,7 +59,7 @@ export default function Home() {
               className="w-full h-full rounded-xl shadow-2xl 
         transition-all duration-200 ease-out
         bg-cover bg-center"
-              style={{ backgroundImage: `url(/cards/card2.png)` }}
+              style={{ backgroundImage: `url(/section/2.png)` }}
             />
           </div>
           {/* CARD 3 */}
@@ -71,7 +71,7 @@ export default function Home() {
               className="w-full h-full rounded-xl shadow-2xl 
         transition-all duration-200 ease-out
         bg-cover bg-center rotate-y-[-25deg]"
-              style={{ backgroundImage: `url(/cards/card3.png)` }}
+              style={{ backgroundImage: `url(/section/3.png)` }}
             />
           </div>
 
@@ -89,7 +89,7 @@ export default function Home() {
               <div className="flex justify-end absolute right-0 top-0 w-full ">
                 <div className="w-[800px] h-72 bg-gray-200 relative border border-gray-300 shadow-lg">
                   <Image
-                    src="/cards/card3.png"
+                    src="/creativemarketing1.webp"
                     alt="Close-up of foot in black boot resting on blue jeans"
                     layout="fill"
                     objectFit="cover"
@@ -244,10 +244,10 @@ export default function Home() {
             {/* Kolom Kiri: Judul dan Tombol */}
             <div className="flex-shrink-0 w-full lg:w-[30%] p-8 lg:py-0 lg:pl-16 lg:pr-12 text-white">
               <p className="uppercase text-sm font-semibold tracking-widest opacity-80 mb-2">
-                OUR IMPACT
+                OUR DOCUMENTATION
               </p>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-8 leading-tight">
-                What's new at WGS
+                On Duty
               </h2>
               <a
                 href="#" // Ganti dengan path yang sesuai

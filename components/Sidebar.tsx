@@ -9,7 +9,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="font-bold text-xl tracking-wide text-white">
-          Saptaloka
+          SAPTALOKA
         </Link>
 
         {/* Menu */}
