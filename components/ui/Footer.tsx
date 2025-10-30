@@ -11,7 +11,7 @@ export default function Footer() {
                             <p className="text-3xl font-bold tracking-wider">SAPTALOKA</p>
                             <p className="text-xs font-light tracking-widest opacity-70">Grow your brand</p>
                         </div>
-                        
+
                     </div>
 
                     {/* 2. Navigasi */}
@@ -37,7 +37,7 @@ export default function Footer() {
                             className="w-10 h-10 flex items-center justify-center bg-gray-800 border border-gray-700 hover:bg-gray-700 transition duration-200"
                             aria-label="WhatsApp"
                         >
-                            <MessageCircle className="w-5 h-5 text-white"/>
+                            <MessageCircle className="w-5 h-5 text-white" />
                         </a>
                         <a
                             href="mailto:example@example.com"
@@ -58,13 +58,8 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Garis Pembatas */}
                 <div className="border-t border-gray-700 my-6"></div>
-
-                {/* Baris Bawah: Kebijakan dan Copyright */}
                 <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-
-                    {/* Link Kebijakan */}
                     <div className="flex space-x-6 mb-4 md:mb-0">
                         <a href="/privacy" className="hover:text-white transition duration-200">
                             Privacy & Policy
@@ -73,8 +68,6 @@ export default function Footer() {
                             Terms Condition
                         </a>
                     </div>
-
-                    {/* Copyright */}
                     <p>
                         Copyright Saptloka© 2025. All rights reserved
                     </p>
