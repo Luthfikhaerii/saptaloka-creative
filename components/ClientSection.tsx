@@ -14,11 +14,10 @@ const brands = [
 
 export default function ClientSection() {
   return (
-    <section className="py-36">
-      <h2 className="text-center text-6xl font-extrabold mb-6">Clients</h2>
-      <p className="text-sm  text-center md:text-base text-gray-700 mb-6">
+    <section className="py-16 mb-20">
+      {/* <p className="text-sm  text-center md:text-base text-gray-700 mb-6">
         Introduce yourself with content that sparks conversation and disrupts the traditional marketing model. Be memorable. Feel authentic. Make an impact.
-      </p>
+      </p> */}
       <div className="w-full py-6">
         <Swiper
           modules={[Autoplay]}

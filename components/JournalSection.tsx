@@ -1,65 +1,102 @@
-import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
-import NewsCard from "./ui/NewsCard";
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function JournalSection() {
-    return(
-        <section className="bg-white z-20">
-        <div className="min-h-[40rem] flex flex-col justify-center z-10">
-          <div className="bg-black h-[25rem] flex flex-col justify-center relative z-10 absolute">
-          </div>
-          <div className="flex flex-col lg:flex-row items-start lg:items-center max-w-[90rem] mx-auto w-full absolute z-20">
-            <div className="flex-shrink-0 w-full lg:w-[30%] p-8 lg:py-0 lg:pl-16 lg:pr-12 text-white">
-              <p className="uppercase text-sm font-semibold tracking-widest opacity-80 mb-2">
-                OUR DOCUMENTATION
-              </p>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-8 leading-tight">
-                On Duty
-              </h2>
-              <a
-                href="#" 
-                className="inline-block border-2 border-white text-white px-6 py-3 font-semibold text-sm hover:bg-white hover:text-blue-600 transition duration-300"
-              >
-                See more news
-              </a>
-            </div>
+  return (
+    <section className="bg-black text-white w-full">
+      {/* ====== Related Work ====== */}
+      <div className="px-6 md:px-16 py-16 border-b border-gray-800">
+        <h2 className="text-3xl md:text-5xl font-bold mb-10">Related work</h2>
 
-            <div className="flex-grow overflow-x-hidden relative w-full lg:w-[75%] py-10 lg:py-16">
-              <div className="flex px-8 lg:px-0">
-                <NewsCard
-                  title="We are living through a technological revolution unlike a..."
-                  imageSrc="/cards/card1.png" 
-                  category="FROM STANDALONE MODELS TO FULLY INTEGRATED..."
-                />
-                <NewsCard
-                  title="The Hidden Complexity of Enterprise Procurement In today's..."
-                  imageSrc="/cards/card2.png" 
-                  category="REIMAGINING PROCUREMENT: HOW ZYCUS SOURCE-..."
-                />
-                <NewsCard
-                  title="The Agile Transformation Challenge model"
-                  imageSrc="/cards/card3.png" 
-                  category="TRANSFORMING YOUR AGILE..."
-                />
-              </div>
-              <div className="absolute top-1/2 left-4 lg:left-0 transform -translate-y-1/2 z-10">
-                <button
-                  className="bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition duration-200 shadow-lg"
-                  aria-label="Previous news item"
-                >
-                  <ArrowLeftIcon className="h-6 w-6" />
-                </button>
-              </div>
-              <div className="absolute top-1/2 right-4 transform -translate-y-1/2 z-10">
-                <button
-                  className="bg-white/80 hover:bg-white text-blue-600 p-3 rounded-full transition duration-200 shadow-lg"
-                  aria-label="Next news item"
-                >
-                  <ArrowRightIcon className="h-6 w-6" />
-                </button>
-              </div>
+        {/* Carousel / Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Item 1 */}
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+            className="cursor-pointer"
+          >
+            <div className="bg-white aspect-video relative overflow-hidden">
+              <Image
+                src="/travel-hacker.jpg"
+                alt="Travel Hacker"
+                fill
+                className="object-cover"
+              />
             </div>
-          </div>
+            <p className="text-xs text-gray-400 mt-3">ULTIMATE TRAVEL HACKER</p>
+          </motion.div>
+
+          {/* Item 2 */}
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+            className="cursor-pointer"
+          >
+            <div className="bg-white aspect-video relative overflow-hidden">
+              <Image
+                src="/hot-drop.jpg"
+                alt="Hot Drop"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <p className="text-xs text-gray-400 mt-3">EXTRA HOT DROP</p>
+          </motion.div>
+
+          {/* Item 3 */}
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+            className="cursor-pointer"
+          >
+            <div className="bg-white aspect-video relative overflow-hidden">
+              <Image
+                src="/monumental-beanies.jpg"
+                alt="Monumental Beanies"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <p className="text-xs text-gray-400 mt-3">MONUMENTAL BEANIES</p>
+          </motion.div>
         </div>
-      </section>
-    )
+      </div>
+
+      {/* ====== How Can We Help You ====== */}
+      <div className="px-6 md:px-16 py-24 grid md:grid-cols-2 gap-16">
+        {/* Left Text */}
+        <div>
+          <p className="text-sm text-gray-400 mb-2">Let’s talk</p>
+          <h2 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+            HOW CAN WE <br /> HELP YOU?
+          </h2>
+          <p className="text-gray-400 max-w-md">
+            We do conversations, not just contact forms. Get in touch to discuss
+            our process, previous work, or media requests.
+          </p>
+        </div>
+
+        {/* Right Buttons */}
+        <div className="flex flex-wrap gap-4 md:justify-start justify-center">
+          {[
+            "Animation",
+            "Content Series",
+            "Social Video Content",
+            "Product Explainers",
+            "Commercials",
+            "Other",
+          ].map((item) => (
+            <button
+              key={item}
+              className="border border-gray-500 px-5 py-2 rounded-full text-sm hover:bg-white hover:text-black transition"
+            >
+              {item}
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

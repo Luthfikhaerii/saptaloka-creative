@@ -27,7 +27,7 @@ export default function ScrollHorizontalCarousel() {
           {images.map((src, index) => (
             <div
               key={index}
-              className="relative w-[500px] h-[300px] flex-shrink-0 overflow-hidden rounded-2xl shadow-lg"
+              className="relative w-[500px] h-[300px] flex-shrink-0 overflow-hidden shadow-lg"
             >
               <Image
                 src={src}
