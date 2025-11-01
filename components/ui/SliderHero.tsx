@@ -9,10 +9,10 @@ export default function ScrollHorizontalCarousel() {
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
 
   const images = [
-    "/section/1.png",
+    "/creativemarketing2.jpg",
     "/creativemarketing1.webp",
-    "/section/1.png",
-    "/creativemarketing1.webp",
+    "/creativemarketing3.jpg",
+    "/creativemarketing4.jpg",
   ];
 
   return (

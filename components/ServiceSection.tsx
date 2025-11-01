@@ -22,7 +22,7 @@ export default function ServiceSection() {
         {/* Kiri: teks */}
         <div>
           <h2 className="text-4xl md:text-6xl font-extrabold mb-4">
-            LIVE ACTION
+            SOCIAL MEDIA MANAGEMENT
           </h2>
 
           <p className="text-sm font-light mb-4">Services included:</p>
@@ -65,7 +65,7 @@ export default function ServiceSection() {
         {/* Kiri: teks */}
         <div>
           <h2 className="text-4xl md:text-6xl font-extrabold mb-4">
-            LIVE ACTION
+            SOCIAL MEDIA MANAGEMENT
           </h2>
 
           <p className="text-sm font-light mb-4">Services included:</p>

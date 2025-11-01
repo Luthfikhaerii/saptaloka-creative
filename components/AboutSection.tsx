@@ -9,10 +9,7 @@ export default function AboutSection(){
 
       {/* Deskripsi */}
       <h2 className="text-3xl md:text-4xl font-bold leading-tight max-w-7xl">
-        Phantom is a global Technology Creative studio, elevating both real and
-        digital worlds. We partner with companies and collaborators aspiring to
-        lead the way in marketing, brand and innovation, creating together in
-        unexpected and exceptional ways.
+       Saptaloka Creative is a Bandung-based creative agency specializing in social media marketing and digital storytelling. We collaborate with brands and businesses that aspire to lead in creativity, strategy, and innovation — crafting experiences that connect, engage, and inspire.
       </h2>
     </section>
     )

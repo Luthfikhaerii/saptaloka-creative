@@ -5,33 +5,18 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black backdrop-blur-md">
-
-      <div className="flex p-2">  {/* Location & Contact */}
-
+      <div className="flex p-2 w-full justify-between">  {/* Location & Contact */}
         <div className="flex w-full justify-between items-center px-4">
-          <p className="text-white p-4 font-bold">SAPTALOKA</p>
-
-          {/* <p className="max-w-xl text-gray-400 text-sm mt-6 leading-relaxed">
-                Phantom is a technology-led creative agency crafting digital experiences
-                for global brands. We merge creativity with technology to build powerful
-                interactions that connect people and ideas.
-            </p> */}
+          <p className="text-white p-2 font-bold">SAPTALOKA</p>
         </div>
-        <div>
-
+        <div className="absolute left-1/2 transform -translate-x-1/2">
+          <Link href="#" className="text-white px-4 hover:text-white">
+            Bandung, Indonesia
+          </Link>
         </div>
-        <div className="w-96 flex justify-between">
-          <div className="text-right text-[5px] uppercase space-y-1">
-            <p className="text-gray-400">Bandung, Indonesia</p>
-            <p className="text-gray-400">15:00 GMT</p>
-            <p className="text-gray-400 mt-2">Auckland, NZ</p>
-            <p className="text-gray-400">04:00 GMT+13</p>
-
-          </div>
-          <button className=" bg-white text-black font-semibold px-2 py-2 rounded-xl hover:bg-gray-200 transition">
-            Let’s Talk
-          </button>
-        </div>
+        <button className="w-28 bg-white text-black font-semibold px-2 py-1 rounded-xl hover:bg-gray-200 transition">
+          Let’s Talk
+        </button>
       </div>
     </nav>
   );

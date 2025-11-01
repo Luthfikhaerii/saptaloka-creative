@@ -3,10 +3,10 @@ import SliderHero from "./ui/SliderHero";
 
 export default function TaglineSection() {
     return (
-        <section className="relative w-full flex flex-col items-center justify-center py-28 bg-white overflow-hidden">
+        <section className="relative w-full flex flex-col items-center justify-center py-32 bg-white overflow-hidden">
             {/* Subtitle */}
             <p className="text-sm text-gray-500 mb-4">
-                Why partner with Visual Domain?
+                Why partner with Saptaloka Creative?
             </p>
 
             {/* Teks Utama */}

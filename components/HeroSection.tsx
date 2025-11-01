@@ -14,25 +14,10 @@ export default function HeroSection() {
                 <div>
                     <p className="text-xs tracking-widest text-gray-400 mb-2">AGENCY</p>
                     <h1 className={"text-7xl font-extrabold leading-[0.9] "+geist.className} >
-                        CREATIVE FOCUSED AND AESTHETIC DRIVEN®
+                        CREATIVE FOCUSED AND IMPACT DRIVEN®
                     </h1>
                 </div>
-
-
             </div>
-
-            {/* Tabs */}
-            {/* <div className="flex space-x-2 mb-8">
-                <button className="px-6 py-2 bg-white text-black font-semibold rounded-full">
-                    Agency
-                </button>
-                <button className="px-6 py-2 bg-gray-800 text-white font-semibold rounded-full hover:bg-gray-700">
-                    Approach
-                </button>
-            </div> */}
-
-            {/* Subtitle */}
-            
         </section>
     )
 }
