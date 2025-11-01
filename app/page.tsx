@@ -23,8 +23,6 @@ export default function Home() {
      <ClientSection/>
      <PortfolioSection />
       <ServiceSection />
-      
-      
       <JournalSection />
     </>
   );

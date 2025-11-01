@@ -16,7 +16,7 @@ export default function Footer() {
 
                     {/* 2. Navigasi */}
                     <nav className="flex flex-wrap justify-center md:justify-start space-x-6 sm:space-x-10 mb-8 md:mb-0 text-lg font-medium">
-                        {['Home', 'Portfolio', 'Contact', 'Documentation'].map((item) => (
+                        {/* {[].map((item) => (
                             <a
                                 key={item}
                                 href={`/${item.toLowerCase().replace(' ', '-')}`}
@@ -24,7 +24,7 @@ export default function Footer() {
                             >
                                 {item}
                             </a>
-                        ))}
+                        ))} */}
                     </nav>
 
                     {/* 3. Ikon Sosial */}
