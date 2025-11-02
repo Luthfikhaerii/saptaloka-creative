@@ -19,7 +19,7 @@ export default function JournalSection() {
           >
             <div className="bg-white aspect-video relative overflow-hidden">
               <Image
-                src="/travel-hacker.jpg"
+                src="/works/work1.jpg"
                 alt="Travel Hacker"
                 fill
                 className="object-cover"
@@ -36,7 +36,7 @@ export default function JournalSection() {
           >
             <div className="bg-white aspect-video relative overflow-hidden">
               <Image
-                src="/hot-drop.jpg"
+                src="/works/work2.avif"
                 alt="Hot Drop"
                 fill
                 className="object-cover"
@@ -53,7 +53,7 @@ export default function JournalSection() {
           >
             <div className="bg-white aspect-video relative overflow-hidden">
               <Image
-                src="/monumental-beanies.jpg"
+                src="/works/work3.jpg"
                 alt="Monumental Beanies"
                 fill
                 className="object-cover"

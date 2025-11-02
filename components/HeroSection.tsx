@@ -6,7 +6,7 @@ const geist = Zalando_Sans({
 
 export default function HeroSection() {
     return (
-        <section className="bg-black text-white flex flex-col justify-center px-10 md:px-10 pt-16 pb-10 ">
+        <section className="bg-[#1C1C1C] text-white flex flex-col justify-center px-10 md:px-10 pt-16 pb-10 ">
             {/* Header */}
             <div></div>
             <div className="border-t border-gray-700 mb-10 mt-20"></div>

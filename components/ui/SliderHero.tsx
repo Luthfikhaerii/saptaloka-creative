@@ -16,7 +16,7 @@ export default function ScrollHorizontalCarousel() {
   ];
 
   return (
-    <section className="relative w-full h-[60vh] bg-black flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-[60vh] bg-[#1C1C1C] flex items-center justify-center overflow-hidden">
       {/* Container untuk horizontal scroll */}
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <motion.div

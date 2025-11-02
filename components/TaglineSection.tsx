@@ -16,10 +16,10 @@ export default function TaglineSection() {
                 {/* Gambar tengah pertama */}
                 <span className="inline-block align-middle mx-2 rounded-xl overflow-hidden">
                     <Image
-                        src="/section/1.png" // ganti dengan path gambarmu
+                        src="/creativemarketing3.jpg" // ganti dengan path gambarmu
                         alt="Creative work"
-                        width={100}
-                        height={80}
+                        width={150}
+                        height={100}
                         className="object-cover rounded-lg"
                     />
                 </span>
@@ -30,10 +30,10 @@ export default function TaglineSection() {
                 {/* Gambar tengah kedua */}
                 <span className="inline-block align-middle mx-2 rounded-xl overflow-hidden">
                     <Image
-                        src="/section/2.png" // ganti dengan path gambarmu
+                        src="/creativemarketing4.jpg" // ganti dengan path gambarmu
                         alt="Powerhouse work"
-                        width={100}
-                        height={80}
+                        width={130}
+                        height={90}
                         className="object-cover rounded-lg"
                     />
                 </span>

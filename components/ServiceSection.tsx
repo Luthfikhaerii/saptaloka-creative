@@ -29,7 +29,7 @@ export default function ServiceSection() {
 
           {/* Daftar kategori */}
           <div className="flex flex-wrap gap-2 mb-6">
-            {["Explainer", "Product", "TVC", "Social", "Testimonial"].map(
+            {["Story", "Scheduling Upload", "Admin", "Reporting"].map(
               (item, i) => (
                 <span
                   key={i}
@@ -39,16 +39,14 @@ export default function ServiceSection() {
                 </span>
               )
             )}
-            <button className="bg-black text-white text-sm px-4 py-1 rounded-full">
-              See more
-            </button>
+            
           </div>
         </div>
 
         {/* Kanan: gambar / video */}
         <div className="flex justify-center">
           <Image
-            src="/images/live-action.jpg" // Ganti dengan path gambar kamu
+            src="/service/service1.jpg" // Ganti dengan path gambar kamu
             alt="Live Action"
             width={500}
             height={350}
@@ -65,14 +63,14 @@ export default function ServiceSection() {
         {/* Kiri: teks */}
         <div>
           <h2 className="text-4xl md:text-6xl font-extrabold mb-4">
-            SOCIAL MEDIA MANAGEMENT
+            VIDEO MARKETING
           </h2>
 
           <p className="text-sm font-light mb-4">Services included:</p>
 
           {/* Daftar kategori */}
           <div className="flex flex-wrap gap-2 mb-6">
-            {["Explainer", "Product", "TVC", "Social", "Testimonial"].map(
+            {["Shooting", "Content Brief", "Editing", "Riset"].map(
               (item, i) => (
                 <span
                   key={i}
@@ -82,16 +80,14 @@ export default function ServiceSection() {
                 </span>
               )
             )}
-            <button className="bg-black text-white text-sm px-4 py-1 rounded-full">
-              See more
-            </button>
+            
           </div>
         </div>
 
         {/* Kanan: gambar / video */}
         <div className="flex justify-center">
           <Image
-            src="/images/live-action.jpg" // Ganti dengan path gambar kamu
+            src="/service/service2.avif" // Ganti dengan path gambar kamu
             alt="Live Action"
             width={500}
             height={350}
@@ -107,14 +103,14 @@ export default function ServiceSection() {
         {/* Kiri: teks */}
         <div>
           <h2 className="text-4xl md:text-6xl font-extrabold mb-4">
-            LIVE ACTION
+            INSTAGRAM FEEDS
           </h2>
 
           <p className="text-sm font-light mb-4">Services included:</p>
 
           {/* Daftar kategori */}
           <div className="flex flex-wrap gap-2 mb-6">
-            {["Explainer", "Product", "TVC", "Social", "Testimonial"].map(
+            {["Concept", "Design", "Photo Shoot"].map(
               (item, i) => (
                 <span
                   key={i}
@@ -124,16 +120,14 @@ export default function ServiceSection() {
                 </span>
               )
             )}
-            <button className="bg-black text-white text-sm px-4 py-1 rounded-full">
-              See more
-            </button>
+            
           </div>
         </div>
 
         {/* Kanan: gambar / video */}
         <div className="flex justify-center">
           <Image
-            src="/images/live-action.jpg" // Ganti dengan path gambar kamu
+            src="/service/service3.jpg" // Ganti dengan path gambar kamu
             alt="Live Action"
             width={500}
             height={350}
