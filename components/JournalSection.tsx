@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function JournalSection() {
   return (
-    <section className="bg-black text-white w-full">
+    <section className="bg-[#1C1C1C] text-white w-full">
       {/* ====== Related Work ====== */}
       <div className="px-6 md:px-16 py-16 border-b border-gray-800">
         <h2 className="text-3xl md:text-5xl font-bold mb-10">Related work</h2>
@@ -90,7 +90,7 @@ export default function JournalSection() {
           ].map((item) => (
             <button
               key={item}
-              className="border border-gray-500 px-5 py-2 rounded-full text-sm hover:bg-white hover:text-black transition"
+              className="border border-gray-500 px-5 py-2 rounded-xl text-sm hover:bg-white hover:text-black transition"
             >
               {item}
             </button>

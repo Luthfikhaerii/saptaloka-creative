@@ -1,16 +1,21 @@
-import Image from "next/image";
+export default function AboutSection() {
+  return (
+    <section className="bg-[#1C1C1C] text-white w-full pb-20 pt-16 px-5 sm:px-8 md:px-12 lg:px-20">
+      {/* Garis atas */}
+      <div className="border-t border-gray-700 mb-8 sm:mb-10"></div>
 
-export default function AboutSection(){
-    return(
-        <section className="bg-[#1C1C1C] text-white w-full py-24 px-6 md:px-24 ">
       {/* Label */}
-      <div className="border-t border border-gray-700 mb-10 mt-10"></div>
-      <p className="text-xs text-gray-400 tracking-widest mb-4">ABOUT</p>
+      <p className="text-[10px] sm:text-xs text-gray-400 tracking-[0.2em] mb-3 sm:mb-4 uppercase">
+        ABOUT
+      </p>
 
       {/* Deskripsi */}
-      <h2 className="text-3xl md:text-4xl font-bold leading-tight max-w-7xl">
-       Saptaloka Creative is a Bandung-based creative agency specializing in social media marketing and digital storytelling. We collaborate with brands and businesses that aspire to lead in creativity, strategy, and innovation — crafting experiences that connect, engage, and inspire.
+      <h2 className="font-bold leading-snug max-w-5xl text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+        Saptaloka Creative is a Bandung-based creative agency specializing in
+        social media marketing and digital storytelling. We collaborate with
+        brands and businesses that aspire to lead in creativity, strategy, and
+        innovation — crafting experiences that connect, engage, and inspire.
       </h2>
     </section>
-    )
+  );
 }

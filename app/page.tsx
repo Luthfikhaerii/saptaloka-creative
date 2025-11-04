@@ -15,15 +15,20 @@ import TaglineSection from "@/components/TaglineSection";
 export default function Home() {
   return (
     <>
-    
-     <HeroSection/>
-     <SliderHero/>
-     <AboutSection/>
-     <TaglineSection/>
-     <ClientSection/>
-     <PortfolioSection />
-      <ServiceSection />
-      <JournalSection />
+      <div className=" bg-[#1C1C1C] w-full">
+        <div className="max-w-7xl mx-auto ">
+          <HeroSection />
+          <SliderHero />
+          <AboutSection />
+          <TaglineSection />
+          <PortfolioSection />
+          <ClientSection />
+          <ServiceSection />
+          <JournalSection />
+        </div>
+
+      </div>
+
     </>
   );
 }

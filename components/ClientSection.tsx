@@ -14,7 +14,10 @@ const brands = [
 
 export default function ClientSection() {
   return (
-    <section className="py-16 mb-">
+    <section className="py-16 mb-20">
+      <h2 className="text-3xl font-bold text-center text-white mb-10 md:text-4xl">
+        Trusted by Leading Brands
+      </h2>
       {/* <p className="text-sm  text-center md:text-base text-gray-700 mb-6">
         Introduce yourself with content that sparks conversation and disrupts the traditional marketing model. Be memorable. Feel authentic. Make an impact.
       </p> */}
