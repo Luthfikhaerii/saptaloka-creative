@@ -1,7 +1,18 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { easeOut, motion } from "framer-motion";
+import "swiper/css";
 
+// Animasi fade-up saat muncul di layar
+const fadeUp = {
+  hidden: { opacity: 0, y: 60 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: easeOut },
+  },
+};
 
 const brands = [
   "/clients/client1.png",
@@ -14,36 +25,71 @@ const brands = [
 
 export default function ClientSection() {
   return (
-    <section className="py-16 mb-20">
-      <h2 className="text-3xl font-bold text-center text-white mb-10 md:text-4xl">
-        Trusted by Leading Brands
-      </h2>
-      {/* <p className="text-sm  text-center md:text-base text-gray-700 mb-6">
-        Introduce yourself with content that sparks conversation and disrupts the traditional marketing model. Be memorable. Feel authentic. Make an impact.
-      </p> */}
-      <div className="w-full py-6">
-        <Swiper
-          modules={[Autoplay]}
-          slidesPerView={4}
-          spaceBetween={24}
-          loop={true}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-          }}
-          speed={3000}
+    <motion.section
+      className="py-20 bg-[#1C1C1C] text-center text-white mb-16 overflow-hidden"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={fadeUp}
+    >
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Title */}
+        <motion.h2
+          className="text-3xl md:text-5xl font-extrabold mb-6"
+          variants={fadeUp}
         >
-          {brands.map((logo, i) => (
-            <SwiperSlide key={i}>
-              <img
-                src={logo}
-                alt="brand logo"
-                className="h-24 w-24 w-auto mx-auto opacity-70 hover:opacity-100 transition"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          Trusted by Leading Brands
+        </motion.h2>
+
+        {/* Subtitle */}
+        <motion.p
+          className="text-gray-400 text-sm md:text-base mb-12 max-w-2xl mx-auto"
+          variants={fadeUp}
+        >
+          Collaborating with top brands to create authentic and high-impact
+          campaigns that connect deeply with their audiences.
+        </motion.p>
+
+        {/* Swiper Slider */}
+        <motion.div
+          className="py-4"
+          variants={fadeUp}
+          transition={{ delay: 0.3 }}
+        >
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={2}
+            spaceBetween={24}
+            loop={true}
+            speed={4000}
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: false,
+            }}
+            breakpoints={{
+              640: { slidesPerView: 3 },
+              768: { slidesPerView: 4 },
+              1024: { slidesPerView: 5 },
+              1280: { slidesPerView: 6 },
+            }}
+            className="select-none"
+          >
+            {brands.map((logo, i) => (
+              <SwiperSlide key={i}>
+                <div className="flex items-center justify-center">
+                  <motion.img
+                    src={logo}
+                    alt={`brand-${i}`}
+                    className="h-20 w-auto opacity-70 hover:opacity-100 hover:scale-105 transition-all duration-300 drop-shadow-md"
+                    whileHover={{ scale: 1.1 }}
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

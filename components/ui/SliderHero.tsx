@@ -1,12 +1,19 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+
+import { motion, useScroll, useTransform, useAnimationFrame } from "framer-motion";
 import Image from "next/image";
+import { useRef, useState } from "react";
 
 export default function ScrollHorizontalCarousel() {
   const { scrollYProgress } = useScroll();
+  const baseX = useTransform(scrollYProgress, [0, 1], [0, -800]); // scroll movement
+  const [offset, setOffset] = useState(0);
+  const ref = useRef(null);
 
-  // Gerakkan carousel ke kiri seiring scroll
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  // Animasi otomatis (bergerak perlahan ke kiri)
+  useAnimationFrame((t, delta) => {
+    setOffset((prev) => (prev - delta * 0.015) % 800); // semakin kecil -> semakin lambat
+  });
 
   const images = [
     "/creativemarketing2.jpg",
@@ -15,16 +22,20 @@ export default function ScrollHorizontalCarousel() {
     "/creativemarketing4.jpg",
   ];
 
+  // Gabungkan efek scroll dan auto slide
+  const x = useTransform(baseX, (v) => `${v + offset}px`);
+
   return (
     <section className="relative w-full h-[160px] sm:h-[220px] md:h-[280px] lg:h-[340px] bg-[#1C1C1C] flex items-center justify-center overflow-hidden">
       {/* Wrapper utama untuk efek sticky */}
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <motion.div
+          ref={ref}
           style={{ x }}
           className="flex space-x-2 sm:space-x-6 md:space-x-8 lg:space-x-10 px-2 sm:px-10 md:px-20 translate-z-0 will-change-transform"
-          transition={{ ease: "easeInOut" }}
         >
-          {images.map((src, index) => (
+          {/* Gandakan array supaya loop terasa mulus */}
+          {[...images, ...images].map((src, index) => (
             <div
               key={index}
               className="relative flex-shrink-0 overflow-hidden shadow-none

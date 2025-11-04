@@ -2,7 +2,7 @@ import { Mail, MessageCircle, Instagram, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white pt-16 pb-10 px-6 sm:px-10 lg:px-20">
+    <footer className="bg-[#1C1C1C] text-white pt-16 pb-10 px-6 sm:px-10 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* ====== TOP SECTION ====== */}
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-10 mb-10">

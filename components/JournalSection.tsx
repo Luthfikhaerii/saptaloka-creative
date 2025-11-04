@@ -1,85 +1,116 @@
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
+
+// Variants animasi muncul dari bawah (fade-up)
+const fadeUp = {
+  hidden: { opacity: 0, y: 60 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: easeOut, // smooth easeOut
+    },
+  },
+};
 
 export default function JournalSection() {
   return (
     <section className="bg-[#1C1C1C] text-white w-full">
       {/* ====== Related Work ====== */}
-      <div className="px-6 md:px-16 py-16 border-b border-gray-800">
-        <h2 className="text-3xl md:text-5xl font-bold mb-10">Related work</h2>
+      <motion.div
+        className="px-6 md:px-16 py-16 border-b border-gray-800"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeUp}
+      >
+        <h2 className="text-3xl md:text-5xl font-bold mb-10 text-center md:text-left">
+          Related work
+        </h2>
 
         {/* Carousel / Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Item 1 */}
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-            className="cursor-pointer"
-          >
-            <div className="bg-white aspect-video relative overflow-hidden">
-              <Image
-                src="/works/work1.jpg"
-                alt="Travel Hacker"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <p className="text-xs text-gray-400 mt-3">ULTIMATE TRAVEL HACKER</p>
-          </motion.div>
-
-          {/* Item 2 */}
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-            className="cursor-pointer"
-          >
-            <div className="bg-white aspect-video relative overflow-hidden">
-              <Image
-                src="/works/work2.avif"
-                alt="Hot Drop"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <p className="text-xs text-gray-400 mt-3">EXTRA HOT DROP</p>
-          </motion.div>
-
-          {/* Item 3 */}
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-            className="cursor-pointer"
-          >
-            <div className="bg-white aspect-video relative overflow-hidden">
-              <Image
-                src="/works/work3.jpg"
-                alt="Monumental Beanies"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <p className="text-xs text-gray-400 mt-3">MONUMENTAL BEANIES</p>
-          </motion.div>
+          {[
+            { src: "/works/work1.jpg", title: "ULTIMATE TRAVEL HACKER" },
+            { src: "/works/work2.avif", title: "EXTRA HOT DROP" },
+            { src: "/works/work3.jpg", title: "MONUMENTAL BEANIES" },
+          ].map((item, i) => (
+            <motion.div
+              key={i}
+              className="cursor-pointer"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <div className="bg-white aspect-video relative overflow-hidden">
+                <Image
+                  src={item.src}
+                  alt={item.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-xs text-gray-400 mt-3">{item.title}</p>
+            </motion.div>
+          ))}
         </div>
-      </div>
+      </motion.div>
 
       {/* ====== How Can We Help You ====== */}
-      <div className="px-6 md:px-16 py-24 grid md:grid-cols-2 gap-16">
+      <motion.div
+        className="px-6 md:px-16 py-24 grid md:grid-cols-2 gap-16"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeUp}
+      >
         {/* Left Text */}
         <div>
-          <p className="text-sm text-gray-400 mb-2">Let’s talk</p>
-          <h2 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+          <motion.p
+            className="text-sm text-gray-400 mb-2"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            Let’s talk
+          </motion.p>
+
+          <motion.h2
+            className="text-5xl md:text-7xl font-extrabold leading-tight mb-6"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
             HOW CAN WE <br /> HELP YOU?
-          </h2>
-          <p className="text-gray-400 max-w-md">
+          </motion.h2>
+
+          <motion.p
+            className="text-gray-400 max-w-md"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
             We do conversations, not just contact forms. Get in touch to discuss
             our process, previous work, or media requests.
-          </p>
+          </motion.p>
         </div>
 
         {/* Right Buttons */}
-        <div className="flex flex-wrap gap-4 md:justify-start justify-center">
+        <motion.div
+          className="flex flex-wrap gap-4 md:justify-start justify-center"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {[
             "Animation",
             "Content Series",
@@ -87,16 +118,18 @@ export default function JournalSection() {
             "Product Explainers",
             "Commercials",
             "Other",
-          ].map((item) => (
-            <button
-              key={item}
+          ].map((item, i) => (
+            <motion.button
+              key={i}
               className="border border-gray-500 px-5 py-2 rounded-xl text-sm hover:bg-white hover:text-black transition"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
             >
               {item}
-            </button>
+            </motion.button>
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
