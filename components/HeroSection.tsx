@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Zalando_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-const geist = Zalando_Sans({
-  subsets: ["latin"],
+const geist = Poppins({
+    subsets: ["latin"],
+    weight: "700"
 });
 
 export default function HeroSection() {
