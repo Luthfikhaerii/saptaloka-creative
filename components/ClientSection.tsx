@@ -26,13 +26,13 @@ const brands = [
 export default function ClientSection() {
   return (
     <motion.section
-      className="py-20 bg-[#1C1C1C] text-center text-white mb-16 overflow-hidden"
+      className="bg-[#1C1C1C] text-center text-white overflow-hidden md:h-screen mb-10 flex justify-center items-center"
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.3 }}
       variants={fadeUp}
     >
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl px-6">
         {/* Title */}
         <motion.h2
           className="text-3xl md:text-5xl font-extrabold mb-6"

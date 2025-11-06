@@ -5,20 +5,12 @@ import { motion } from "framer-motion";
 export default function PortfolioSection() {
   return (
     <motion.section
-      className="w-full bg-[#1C1C1C] py-16 px-6 md:px-10 flex flex-col items-center text-center"
+      className="w-full bg-[#1C1C1C] py-16 px-6 md:px-10 flex flex-col items-center text-center max-w-7xl mx-auto"
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.3 }}
     >
-      {/* Garis atas */}
-      <motion.div
-        className="border-t border-gray-500 mb-8 sm:mb-10 w-full"
-        initial={{ width: 0 }}
-        whileInView={{ width: "100%" }}
-        transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
-        viewport={{ once: true }}
-      />
 
       {/* Icon kutipan */}
       <motion.div

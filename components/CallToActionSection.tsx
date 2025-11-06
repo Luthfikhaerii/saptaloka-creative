@@ -1,6 +1,6 @@
 export default function CallToActionSection() {
     return(
-        <section className="bg-[#46b6e8] py-20 sm:py-24 lg:py-32 flex items-center justify-center">
+        <section className="bg-[#46b6e8] py-20 sm:py-24 lg:py-32 flex items-center justify-center ">
         <div className="text-center px-4">
 
           {/* Teks Kecil - CONTACT US */}

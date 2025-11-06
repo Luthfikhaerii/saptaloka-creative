@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 export default function AboutSection() {
   return (
     <motion.section
-      className="bg-[#1C1C1C] text-white w-full pt-16 px-6 sm:px-8 md:px-10"
-      initial={{ opacity: 0, y: 50 }} // sebelum terlihat
-      whileInView={{ opacity: 1, y: 0 }} // ketika muncul di layar
+      className="bg-[#1C1C1C] text-white w-full pt-16 px-6 sm:px-8 md:px-10 max-w-7xl mx-auto"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.3 }} // muncul sekali ketika 30% terlihat
+      viewport={{ once: true, amount: 0.3 }}
     >
       {/* Garis atas */}
       <motion.div
@@ -44,6 +44,14 @@ export default function AboutSection() {
         brands and businesses that aspire to lead in creativity, strategy, and
         innovation — crafting experiences that connect, engage, and inspire.
       </motion.h2>
+       {/* Garis atas */}
+      <motion.div
+        className="border-t border-gray-500 my-8 sm:my-10 w-full"
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%" }}
+        transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
+        viewport={{ once: true }}
+      />
     </motion.section>
   );
 }

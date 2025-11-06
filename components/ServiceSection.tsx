@@ -17,6 +17,7 @@ export default function ServiceSection() {
 
   return (
     <section className="w-full bg-[#d8d5c8] text-black py-16 sm:py-20 lg:py-28 px-6 sm:px-10 md:px-20 overflow-hidden">
+      <div className="max-w-7xl mx-auto">
       {/* Subjudul */}
       <motion.p
         variants={fadeUp}
@@ -186,6 +187,7 @@ export default function ServiceSection() {
           </motion.div>
         </div>
       </motion.div>
+      </div>
     </section>
   );
 }

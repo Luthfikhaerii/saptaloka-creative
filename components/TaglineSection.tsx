@@ -6,24 +6,15 @@ import Image from "next/image";
 export default function TaglineSection() {
   return (
     <motion.section
-      className="relative bg-[#1C1C1C] w-full flex flex-col items-end justify-end pt-16 overflow-hidden text-end px-6 sm:px-8 md:px-10 max-w-7xl mx-auto"
+      className="relative bg-[#1C1C1C] w-full flex flex-col items-center justify-center pt-16 overflow-hidden text-end px-6 sm:px-8 md:px-10 max-w-7xl mx-auto md:h-screen"
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.3 }}
     >
-      {/* Garis atas */}
-      <motion.div
-        className="border-t border-gray-500 mb-8 sm:mb-10 w-full"
-        initial={{ width: 0 }}
-        whileInView={{ width: "100%" }}
-        transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
-        viewport={{ once: true }}
-      />
-
       {/* Subtitle */}
       <motion.p
-        className="text-gray-300 text-end text-xs sm:text-sm md:text-base mb-4 sm:mb-6"
+        className="text-gray-300 text-center text-xs sm:text-sm md:text-base mb-4 sm:mb-6"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
@@ -36,7 +27,7 @@ export default function TaglineSection() {
       <motion.div
         className="relative font-extrabold text-white leading-[0.9]
           text-[1.8rem] sm:text-[2.5rem] md:text-[4rem] lg:text-[5rem] xl:text-[6rem]
-          flex flex-col items-end justify-end gap-2 sm:gap-4"
+          flex flex-col items-center justify-center gap-2 sm:gap-4"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}

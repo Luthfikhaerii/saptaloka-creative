@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <>
       <div className=" bg-[#1C1C1C] w-full">
-        <div className="max-w-7xl mx-auto ">
           <HeroSection />
           <SliderHero />
           <AboutSection />
@@ -25,8 +24,6 @@ export default function Home() {
           <ClientSection />
           <ServiceSection />
           <JournalSection />
-        </div>
-
       </div>
 
     </>
