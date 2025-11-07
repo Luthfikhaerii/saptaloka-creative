@@ -5,12 +5,13 @@ import { motion } from "framer-motion";
 export default function AboutSection() {
   return (
     <motion.section
-      className="bg-[#1C1C1C] text-white w-full pt-16 px-6 sm:px-8 md:px-10 max-w-7xl mx-auto"
+      className="bg-[#1C1C1C] text-white w-full pt-16 px-6 sm:px-8 md:px-10"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.3 }}
     >
+      <div className="max-w-7xl mx-auto">
       {/* Garis atas */}
       <motion.div
         className="border-t border-gray-500 mb-8 sm:mb-10"
@@ -33,7 +34,7 @@ export default function AboutSection() {
 
       {/* Deskripsi */}
       <motion.h2
-        className="font-bold leading-snug max-w-5xl text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+        className="font-bold leading-snug max-w-6xl text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: "easeOut", delay: 0.6 }}
@@ -44,14 +45,7 @@ export default function AboutSection() {
         brands and businesses that aspire to lead in creativity, strategy, and
         innovation — crafting experiences that connect, engage, and inspire.
       </motion.h2>
-       {/* Garis atas */}
-      <motion.div
-        className="border-t border-gray-500 my-8 sm:my-10 w-full"
-        initial={{ width: 0 }}
-        whileInView={{ width: "100%" }}
-        transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
-        viewport={{ once: true }}
-      />
+      </div>
     </motion.section>
   );
 }

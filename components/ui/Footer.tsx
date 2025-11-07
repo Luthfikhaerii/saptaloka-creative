@@ -40,9 +40,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-700 my-8"></div>
-
         {/* ====== BOTTOM SECTION ====== */}
         <div className="flex flex-col md:flex-row justify-between items-center text-xs sm:text-sm text-gray-400 gap-4">
           <div className="flex flex-wrap justify-center md:justify-start gap-6">

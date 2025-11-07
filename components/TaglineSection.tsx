@@ -96,15 +96,6 @@ export default function TaglineSection() {
           </motion.span>
         </div>
       </motion.div>
-
-      {/* Blue circle accent (opsional, kalau ingin efek tambahan) */}
-      <motion.div
-        className="absolute bottom-10 right-10 w-32 h-32 sm:w-40 sm:h-40 bg-blue-500/30 rounded-full blur-3xl"
-        initial={{ scale: 0, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 1.8 }}
-        viewport={{ once: true }}
-      />
     </motion.section>
   );
 }

@@ -50,7 +50,7 @@ export default function Navbar() {
         </div>
 
         {/* BUTTON */}
-        <button className="w-full sm:w-auto bg-white text-black font-semibold px-4 sm:px-6 py-2 rounded-full hover:bg-gray-200 transition mt-2 sm:mt-0">
+        <button className="w-24  sm:w-auto bg-white text-black font-semibold px-1 md:px-4 sm:px-6 py-2 rounded-full hover:bg-gray-200 transition mt-2 sm:mt-0">
           Let’s Talk
         </button>
       </div>
