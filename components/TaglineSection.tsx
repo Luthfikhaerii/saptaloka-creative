@@ -96,6 +96,9 @@ export default function TaglineSection() {
           </motion.span>
         </div>
       </motion.div>
+      <div>
+        <img src={"/manifest/manifest.png"} className="w-[600px]"/>
+      </div>
     </motion.section>
   );
 }

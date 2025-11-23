@@ -14,7 +14,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto">
       {/* Garis atas */}
       <motion.div
-        className="border-t border-gray-500 mb-8 sm:mb-10"
+        className="border-t border-gray-500 mb-4 sm:mb-4"
         initial={{ width: 0 }}
         whileInView={{ width: "100%" }}
         transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
@@ -23,7 +23,7 @@ export default function AboutSection() {
 
       {/* Label */}
       <motion.p
-        className="text-[10px] sm:text-xs text-gray-400 tracking-[0.2em] mb-3 sm:mb-4 uppercase"
+        className="text-[10px] sm:text-xs text-gray-400 tracking-[0.2em] mb-2 sm:mb-2 uppercase"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
@@ -34,7 +34,7 @@ export default function AboutSection() {
 
       {/* Deskripsi */}
       <motion.h2
-        className="font-bold leading-snug max-w-6xl text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+        className="font-bold leading max-w-6xl text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl pb-32"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: "easeOut", delay: 0.6 }}

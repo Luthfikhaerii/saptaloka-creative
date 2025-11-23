@@ -16,7 +16,7 @@ export default function ServiceSection() {
   };
 
   return (
-    <section className="w-full bg-[#1C1C1C] text-black pt-20 px-6 sm:px-8 md:px-10 overflow-hidden">
+    <section className="w-full bg-[#1C1C1C] text-black px-6 sm:px-8 md:px-10 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Subjudul */}
         <motion.section
@@ -28,7 +28,7 @@ export default function ServiceSection() {
         >
           {/* Garis atas */}
           <motion.div
-            className="border-t border-gray-500 mb-8 sm:mb-10"
+            className="border-t border-gray-500 mb-4"
             initial={{ width: 0 }}
             whileInView={{ width: "100%" }}
             transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
@@ -37,7 +37,7 @@ export default function ServiceSection() {
 
           {/* Label */}
           <motion.p
-            className="text-[10px] sm:text-xs text-gray-400 tracking-[0.2em] mb-3 sm:mb-4 uppercase"
+            className="text-[10px] sm:text-xs text-gray-400 tracking-[0.2em] mb-2 uppercase"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
@@ -48,7 +48,7 @@ export default function ServiceSection() {
 
           {/* Deskripsi */}
           <motion.h2
-            className="font-bold leading-snug max-w-6xl text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+            className="font-bold max-w-6xl text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl pb-32"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.6 }}
@@ -59,7 +59,7 @@ export default function ServiceSection() {
           </motion.h2>
           {/* Garis atas */}
           <motion.div
-            className="border-t border-gray-500 mt-20 mb-4 w-full"
+            className="border-t border-gray-500 mb-4 w-full"
             initial={{ width: 0 }}
             whileInView={{ width: "100%" }}
             transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
@@ -78,10 +78,10 @@ export default function ServiceSection() {
           {/* Kiri: teks */}
           <div className="text-center md:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl max-w-96 font-bold mb-4">
-              SOCIAL MEDIA MANAGEMENT
+              Website Development
             </h2>
-            <p className="text-sm sm:text-base font-light mb-4">
-              Services included:
+            <p className="text-sm sm:text-base leading-0.7 font-light mb-4 max-w-3xl">
+              We offer professional website development services that combine modern design, responsive layouts, and optimized performance to strengthen your online presence. Our team builds scalable, user-friendly websites tailored to your business goals, ensuring seamless functionality across all devices and platforms.
             </p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-6">
@@ -107,11 +107,11 @@ export default function ServiceSection() {
               viewport={{ once: true }}
             >
               <Image
-                src="/service/service1.jpg"
+                src="/service/service1.gif"
                 alt="Social Media Management"
-                width={500}
-                height={350}
-                className="object-cover w-full max-w-[350px] h-auto"
+                width={800}
+                height={800}
+                className="object-cover w-full w-[300px] h-[300px]"
               />
             </motion.div>
           </div>
@@ -134,8 +134,11 @@ export default function ServiceSection() {
           className="md:flex justify-between items-start text-white mb-16"
         >
           <div className="text-center md:text-left">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl max-w-96 font-bold mb-4">
-              VIDEO MARKETING
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl max-w-xl font-bold">
+              Custom
+            </h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl max-w-xl font-bold mb-4">
+              Information System
             </h2>
             <p className="text-sm sm:text-base font-light mb-4">
               Services included:
@@ -161,11 +164,11 @@ export default function ServiceSection() {
               viewport={{ once: true }}
             >
               <Image
-                src="/service/service2.avif"
+                src="/service/service2.gif"
                 alt="Video Marketing"
-                width={500}
-                height={350}
-                className="object-cover w-full max-w-[350px] h-auto"
+                width={800}
+                height={800}
+                className="object-cover w-full w-[350px] h-[350px]"
               />
             </motion.div>
           </div>
